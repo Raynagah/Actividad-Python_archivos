@@ -44,18 +44,20 @@ while flag:
 
     else:
          print("Vuelva a intentarlo...\n")
-
+#Ingresamos el menú de opciones
 while bandera_menu:
     print("\n*****Elige una de las siguientes opciones*****\n");
     print("1.Registrar Trabajador");
     print("2.Listar todos los trabajadores");
     print("3.Imprimir planilla de sueldos");
     print("4.Salir del programa");
+    #Validamos la opción a ingresar para que coincida con una de las dadas por el programa.
     try:
         opcion=int(input("Ingrese la opción deseada: "));
     except:
         print("La opción ingresada no es válida, intentalo nuevamente");
     else: 
+        #Una vez validadas las opciones, mostramos el resultado de lo que seleccione el usuario.
         if opcion==1:
             print("Eligió Registrar Trabajador");
         elif opcion==2:
