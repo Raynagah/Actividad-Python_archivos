@@ -12,3 +12,7 @@ def agregarTrabajadores():
     sueldob=input("Agregue el sueldo bruto del trabajador: ")
     #VALIDAR ENTRADA DE DATOS
     
+    listaTrabajadores=[]
+    #Agregar a la lista
+    
+
