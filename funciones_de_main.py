@@ -1,8 +1,6 @@
 #Aqui irán las funciones del programa.
+#generar archivo json con los datos solicitados al ingresar trabajador.
 
-def listar_trabajadores():
-    print("hola");
-#wena ctm
 
 def agregarTrabajadores():
     #Pedir datos
