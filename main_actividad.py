@@ -35,26 +35,27 @@ while flag:
 
     #Validacion de datos ingresados por el usuario
     if user == lista_user[0] and password == lista_user[1]:
-        print(f"\nEl usuario {user} ha ingresado correctamente.\n")
+        print(f"\nEl usuario {user} ha ingresado correctamente.")
         flag = False
 
     elif user == lista_user2[0] and password == lista_user2[1]:
-        print(f"\nEl usuario {user} ha ingresado correctamente.\n")
+        print(f"\nEl usuario {user} ha ingresado correctamente.")
         flag = False
 
     elif user == lista_user3[0] and password == lista_user3[1]:
-        print(f"\nEl usuario {user} ha ingresado correctamente.\n")
+        print(f"\nEl usuario {user} ha ingresado correctamente.")
         flag = False
 
     else:
          print("Vuelva a intentarlo...\n")
+
 #Ingresamos el menú de opciones
 while bandera_menu:
-    print("\n*****Elige una de las siguientes opciones*****\n");
-    print("1.Registrar Trabajador");
-    print("2.Listar todos los trabajadores");
-    print("3.Imprimir planilla de sueldos");
-    print("4.Salir del programa");
+    print("\n~~~~~Elige una de las siguientes opciones~~~~~\n");
+    print("1.- Registrar Trabajador");
+    print("2.- Listar todos los trabajadores");
+    print("3.- Imprimir planilla de sueldos");
+    print("4.- Salir del programa\n");
     #Validamos la opción a ingresar para que coincida con una de las dadas por el programa.
     try:
         opcion=int(input("Ingrese la opción deseada: "));
