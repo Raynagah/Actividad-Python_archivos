@@ -17,19 +17,23 @@ bandera_menu=True;
 Login
 """
 
-flag = True
-
+#Listas de usuarios y contraseñas
 lista_user = ["luis1010", "4321"]
 lista_user2 = ["marcelo123", "2021"]
 lista_user3 = ["juan2020", "6789"]
 
+#Menu Login
 print("\n~~~Login~~~")
 
+#Inicio de bucle para validar Login
+flag = True
 while flag:
 
+    #Ingreso de datos
     user = input("Ingrese su usuario: ")
     password = input("Ingrese su contraseña: ")
 
+    #Validacion de datos ingresados por el usuario
     if user == lista_user[0] and password == lista_user[1]:
         print(f"\nEl usuario {user} ha ingresado correctamente.\n")
         flag = False
