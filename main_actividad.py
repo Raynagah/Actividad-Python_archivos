@@ -23,7 +23,7 @@ lista_user2 = ["marcelo123", "2021"]
 lista_user3 = ["juan2020", "6789"]
 
 #Menu Login
-print("\n~~~Login~~~")
+print("\n\3\4\5\6 Login \6\5\4\3")
 
 #Inicio de bucle para validar Login
 flag = True
