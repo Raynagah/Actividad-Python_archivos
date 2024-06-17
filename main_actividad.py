@@ -51,7 +51,7 @@ while flag:
 
 #Ingresamos el menú de opciones
 while bandera_menu:
-    print("\n~~~~~Elige una de las siguientes opciones~~~~~\n");
+    print("\n~~~~~ Elige una de las siguientes opciones ~~~~~\n");
     print("1.- Registrar Trabajador");
     print("2.- Listar todos los trabajadores");
     print("3.- Imprimir planilla de sueldos");
