@@ -1,9 +1,6 @@
 #Aqui irán las funciones del programa.
-#generar archivo de texto con los datos solicitados al ingresar trabajador.
+#generar archivo json con los datos solicitados al ingresar trabajador.
 
-def listar_trabajadores():
-    print("hola");
-#wena ctm
 
 def agregarTrabajadores():
     #Pedir datos
@@ -12,4 +9,3 @@ def agregarTrabajadores():
     cargo=input("Agregue el cargo del trabajador: ")
     sueldob=input("Agregue el sueldo bruto del trabajador: ")
     #VALIDAR ENTRADA DE DATOS
-    
