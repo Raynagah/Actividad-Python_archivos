@@ -39,7 +39,7 @@ while flag:
 
 #Ingresamos el menú de opciones
 while bandera_menu:
-    print("\n~~~~~ Elige una de las siguientes opciones ~~~~~\n");
+    print("\n\n\n\n\n\n~~~~~ Elige una de las siguientes opciones ~~~~~\n");
     print("1.- Registrar Trabajador");
     print("2.- Listar todos los trabajadores");
     print("3.- Imprimir planilla de sueldos");
@@ -52,16 +52,16 @@ while bandera_menu:
     else: 
         #Una vez validadas las opciones, mostramos el resultado de lo que seleccione el usuario.
         if opcion==1:
-            print("Eligió Registrar Trabajador");
+            print("\n\n\nEligió Registrar Trabajador");
             funcion.agregarTrabajadores()
         elif opcion==2:
-            print("Eligió Listar todos los trabajadores");
+            print("\n\n\nEligió Listar todos los trabajadores");
             funcion.listar_trabajadores();
         elif opcion==3:
-            print("Eligió Imprimir planilla de sueldos");
+            print("\n\n\nEligió Imprimir planilla de sueldos");
             funcion.planillaSueldos()
         elif opcion==4:
-            print("Eligió Salir, gracias por utilizar nuestro programa");
+            print("\n\n\nEligió Salir, gracias por utilizar nuestro programa");
             bandera_menu=False;
         else:
             print("La opción ingresada no es válida, intentelo nuevamente");

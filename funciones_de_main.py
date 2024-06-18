@@ -4,7 +4,7 @@
 
 def agregarTrabajadores():
     #Pedir datos
-    
+    import time
     import json
 
     flag = True
@@ -13,6 +13,7 @@ def agregarTrabajadores():
     flag3 = True
 
     while flag1:
+        print("\n\n")
         nombre = input("Agregue el nombre: ")
         if nombre == "":
             print("Este campo es obligatorio...")
@@ -28,7 +29,7 @@ def agregarTrabajadores():
 
     while flag3:
         listaCargos=["CEO","Desarrollador","Analista de datos"]
-        print("Seleccione su cargo en la empresa:\n")
+        print("\n\n\nSeleccione su cargo en la empresa:\n")
         for i in range(len(listaCargos)):
             print(f"{i+1}. {listaCargos[i]}")
         try:
@@ -43,6 +44,7 @@ def agregarTrabajadores():
                 print("Solo hay 3 opciones.")
     while flag:
         try:
+            print("\n")
             sueldob = int(input("Agregue el sueldo bruto del trabajador: "))
             flag = False 
         except:
@@ -69,12 +71,14 @@ def agregarTrabajadores():
     with open("trabajadores.json", "w") as archivo:
         json.dump(trabajadores, archivo, indent=4)
 
-    print(f"Trabajador {nombre} {apellido} agregado exitosamente.")
+    print(f"\n\n\nTrabajador {nombre} {apellido} agregado exitosamente.")
+    time.sleep(1);input("Presione ENTER para continuar...")
 
 
 
 def listar_trabajadores():
     import json;
+    import time;
     try:
         with open("trabajadores.json", "r") as archivo:
             trabajadores = json.load(archivo)
@@ -85,18 +89,19 @@ def listar_trabajadores():
             print(f"Trabajador {i+1}:");
             trabajador=(trabajadores[i]);
             print(f"Nombre: {trabajador["nombre"]}\nApellido: {trabajador["apellido"]}\nCargo: {trabajador["cargo"]}\nSueldo Bruto: {trabajador["sueldob"]}\n");
+    time.sleep(1);input("Presione ENTER para continuar...")
 
 
 def planillaSueldos():
-    import json;flag4=True;flag5=True
+    import json;flag4=True;flag5=True;import time
     while flag4:
-        print("***** Imprimir planilla de sueldo *****")
+        print("\n\n\n\n\n\n***** Imprimir planilla de sueldo *****\n")
         try:
             print("1. Imprimir planilla de todos los trabajadores")
             print("2. Imprimir planilla con filtro de empleo")
             opt=int(input("Seleccione opción--> "))
         except:
-            print("Debe ingresar una opción númerica")
+            print("\n\nDebe ingresar una opción númerica")
         else:
             if opt==1:
                 flag4=False
@@ -111,11 +116,13 @@ def planillaSueldos():
                     for i in range(len(trabajadores)):
                         trabajador=(trabajadores[i]);
                         print(f"Trabajor: {trabajador["nombre"]} {trabajador["apellido"]}\nCargo: {trabajador["cargo"]}\nSueldo Bruto: {trabajador["sueldob"]}\nDesc. Salud: {trabajador["descuentoSalud"]}\nDesc. AFP: {trabajador["descuentoAFP"]}\nLíquido a Pagar: {trabajador["sueldoL"]}");
+                time.sleep(1);input("Presione ENTER para continuar...")
+
             elif opt==2:
                 flag4=False
                 while flag5:
                     try:
-                        print("***** Seleccionar empleo *****")
+                        print("\n\n\n\n\n\n***** Seleccionar empleo *****\n")
                         listaCargos=["CEO","Desarrollador","Analista de datos"]
                         for i in range(len(listaCargos)):
                             print(f"{i+1}. {listaCargos[i]}")
@@ -135,7 +142,8 @@ def planillaSueldos():
                                     trabajador=(trabajadores[i]);
                                     if(trabajador["cargo"]=="CEO"):
                                         print(f"Trabajor: {trabajador["nombre"]} {trabajador["apellido"]}\nCargo: {trabajador["cargo"]}\nSueldo Bruto: {trabajador["sueldob"]}\nDesc. Salud: {trabajador["descuentoSalud"]}\nDesc. AFP: {trabajador["descuentoAFP"]}\nLíquido a Pagar: {trabajador["sueldoL"]}");
-                    
+                            time.sleep(1);input("Presione ENTER para continuar...")
+                            
                     
                         elif opt2==2:
                             flag5=False
@@ -149,6 +157,7 @@ def planillaSueldos():
                                     trabajador=(trabajadores[i]);
                                     if(trabajador["cargo"]=="Desarrollador"):
                                         print(f"Trabajor: {trabajador["nombre"]} {trabajador["apellido"]}\nCargo: {trabajador["cargo"]}\nSueldo Bruto: {trabajador["sueldob"]}\nDesc. Salud: {trabajador["descuentoSalud"]}\nDesc. AFP: {trabajador["descuentoAFP"]}\nLíquido a Pagar: {trabajador["sueldoL"]}");
+                            time.sleep(1);input("Presione ENTER para continuar...")
                     
                         elif opt2==3:
                             flag5=False
@@ -162,6 +171,8 @@ def planillaSueldos():
                                     trabajador=(trabajadores[i]);
                                     if(trabajador["cargo"]=="Analista de datos"):
                                         print(f"Trabajor: {trabajador["nombre"]} {trabajador["apellido"]}\nCargo: {trabajador["cargo"]}\nSueldo Bruto: {trabajador["sueldob"]}\nDesc. Salud: {trabajador["descuentoSalud"]}\nDesc. AFP: {trabajador["descuentoAFP"]}\nLíquido a Pagar: {trabajador["sueldoL"]}");
+                            time.sleep(1);input("Presione ENTER para continuar...")
+                    
                         else:
                             print("SOLO HAY 3 OPCIONES..........................")
             else:
