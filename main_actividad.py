@@ -67,7 +67,7 @@ while bandera_menu:
             print("Eligió Registrar Trabajador");
             funcion.agregarTrabajadores()
         elif opcion==2:
-            print("Eligió Listar todos los trbajadores");
+            print("Eligió Listar todos los trabajadores");
         elif opcion==3:
             print("Eligió Imprimir planilla de sueldos");
         elif opcion==4:
