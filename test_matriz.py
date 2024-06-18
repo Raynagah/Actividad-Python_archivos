@@ -1,10 +1,10 @@
 import json
-
+#Creamos las flags para los distintos menús de datos a validar
 flag = True
 flag1 = True
 flag2 = True
 flag3 = True
-
+#A continuación, validamos el ingreso de los datos de "Trabajador"
 while flag1:
     nombre = input("Agregue el nombre: ")
     if nombre == "":
