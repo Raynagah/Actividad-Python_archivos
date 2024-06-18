@@ -1,6 +1,6 @@
 import csv;
 import time as tiempo;
-
+import funciones_de_main as funcion
 #definimos las variables 
 cargo="";
 sueldo_bruto=0;
@@ -65,6 +65,7 @@ while bandera_menu:
         #Una vez validadas las opciones, mostramos el resultado de lo que seleccione el usuario.
         if opcion==1:
             print("Eligió Registrar Trabajador");
+            funcion.agregarTrabajadores()
         elif opcion==2:
             print("Eligió Listar todos los trbajadores");
         elif opcion==3:
