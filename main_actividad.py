@@ -1,17 +1,6 @@
-import time as tiempo;
 import funciones_de_main as funcion
-#definimos las variables 
-cargo="";
-sueldo_bruto=0;
-desc_salud=sueldo_bruto*0.07;
-dec_afp=sueldo_bruto*0.12;
-liquido_a_pagar=0;
-
-lista_trabajadores=[];
-lista_cargos=["CEO","Jefe de área","Obrero","Contador"];
 
 bandera_menu=True;
-
 """
 Login
 """
