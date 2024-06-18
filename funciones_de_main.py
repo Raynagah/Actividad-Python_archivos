@@ -67,5 +67,8 @@ def listar_trabajadores():
     except:
         print("No existen trabajadores.");
     else:
-        print(trabajadores);
+        for i in range(len(trabajadores)):
+            print(f"Trabajador {i+1}:");
+            trabajador=(trabajadores[i]);
+            print(f"Nombre: {trabajador["nombre"]}\nApellido: {trabajador["apellido"]}\nCargo: {trabajador["cargo"]}\nSueldo Bruto: {trabajador["sueldob"]}\n");
 
