@@ -18,7 +18,7 @@ Login
 """
 
 #Listas de usuarios y contraseñas
-lista_user = ["luis1010", "4321"]
+lista_user = ["carlos", "1"]
 lista_user2 = ["marcelo123", "2021"]
 lista_user3 = ["juan2020", "6789"]
 
@@ -71,6 +71,7 @@ while bandera_menu:
             funcion.listar_trabajadores();
         elif opcion==3:
             print("Eligió Imprimir planilla de sueldos");
+            funcion.planillaSueldos()
         elif opcion==4:
             print("Eligió Salir, gracias por utilizar nuestro programa");
             bandera_menu=False;
