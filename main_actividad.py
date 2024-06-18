@@ -1,4 +1,3 @@
-import csv;
 import time as tiempo;
 import funciones_de_main as funcion
 #definimos las variables 
