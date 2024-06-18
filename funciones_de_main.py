@@ -59,7 +59,13 @@ def agregarTrabajadores():
 
     print(f"Trabajador {nombre} {apellido} agregado exitosamente.")
 
-
-
-        
+def listar_trabajadores():
+    import json;
+    try:
+        with open("trabajadores.json", "r") as archivo:
+            trabajadores = json.load(archivo)
+    except:
+        print("No existen trabajadores.");
+    else:
+        print(trabajadores);
 
